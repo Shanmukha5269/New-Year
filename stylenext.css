@@ -79,6 +79,11 @@ body{
 }
 @media only screen and (max-width:600px) {
     body{
+       padding-top: 300px;
+    }
+}
+@media only screen and (max-width:350px) {
+    body{
        padding-top: 400px;
     }
 }
