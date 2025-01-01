@@ -15,6 +15,7 @@ button{
     width: 25%;
     font-size: larger;
     border-radius: 10px;
+    transition: transform 0.35s ease-out;
 }
 
 .card{
@@ -30,6 +31,7 @@ button:hover{
     background-color: rgb(65, 113, 195);
     color: whitesmoke;
     cursor: pointer;
+    transform: scale(1.6) ;
 }
 
 #next{
@@ -47,13 +49,16 @@ button:hover{
 }
 
 #wish{
-    animation: animate 1s ease-in 0s forwards;
+    animation: animate 1.5s ease-in 0s forwards;
+    color: white;
+    font-size: 306%;
+    text-shadow: 5px 5px 4px  rgb(228, 143, 90);
 }
 
 @keyframes animate {
     from{
         opacity: 0;
-    }
+    } 
     to{
         opacity: 1;
     }
@@ -61,6 +66,16 @@ button:hover{
 }
 .result {
     animation: fadeIn 3.5s ease-in 0s forwards;    
+    color: white;
+    font-size: 406%;
+    text-shadow: 5px 5px 4px  rgb(228, 143, 90);
+}
+
+.wish h1{
+    color: rgb(231, 111, 5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 500%;
+    text-shadow: 8px 8px 10px white
 }
 
 @keyframes fadeIn {
@@ -73,4 +88,11 @@ button:hover{
     
 }
 
+#video{
+    position: fixed;
+    /* right: 0;
+    bottom: 0; */
+    min-width: 100%;
+
+}
 
