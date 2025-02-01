@@ -18,7 +18,6 @@ body{
     animation: animate 1.5s ease-in 0s forwards;
     color: white;
     font-size: 306%;
-    text-shadow: 5px 5px 4px  rgb(228, 143, 90);
 }
 
 @keyframes animate {
@@ -34,14 +33,12 @@ body{
     animation: fadeIn 3.5s ease-in 0s forwards;    
     color: white;
     font-size: 406%;
-    text-shadow: 5px 5px 4px  rgb(228, 143, 90);
 }
 
 .wish h1{
     color: rgb(231, 111, 5);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 500%;
-    text-shadow: 8px 8px 10px white
+    text-shadow: 8px 8px 20px white
 }
 
 @keyframes fadeIn {
@@ -56,8 +53,6 @@ body{
 
 #video{
     position: fixed;
-    /* right: 0;
-    bottom: 0; */
     min-width: 100%;
 
 }
