@@ -1,35 +1,101 @@
-#front{
-    background-color: rgb(106, 146, 174);
+body {
+    background-color: #6a92ae;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.entry{
+
+.card {
+    background-color: #e6f0fa;
+    border: 3px solid #2a07db;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    min-height: 300px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px 7px rgba(30, 30, 83, 0.3);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 25px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.entry {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    gap: 15px;
+    width: 100%;
 }
-button{
-    width: 25%;
-    font-size: larger;
+
+.entry h1 {
+    font-size: 2.5rem;
+    color: #2a07db;
+    margin: 0;
+}
+
+.entry p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+button {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 15px;
     border-radius: 10px;
-    transition: transform 0.35s ease-out;
-}
-
-.card{
- border: 3px solid rgb(42, 7, 219);
- background-color: rgb(106, 187, 245);
- border-radius: 10%;
- height: 260px;
- width: 368px;
- box-shadow: 10px 10px 20px 7px rgb(30, 30, 83);
-}
-
-button:hover{
-    background-color: rgb(65, 113, 195);
-    color: whitesmoke;
+    background-color: #2a07db;
+    color: white;
+    border: none;
     cursor: pointer;
-    transform: scale(1.2) ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.35s ease-out;
+}
+
+button:hover {
+    background-color: #4173c3;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: 2px solid #4173c3;
+    outline-offset: 2px;
+}
+
+.button-link {
+    text-decoration: none;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .card {
+        padding: 15px;
+        min-height: 250px;
+    }
+
+    .entry h1 {
+        font-size: 2rem;
+    }
+
+    .entry p {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1rem;
+    }
 }
