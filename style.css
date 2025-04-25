@@ -1,5 +1,5 @@
 body {
-    background-color: #6a92ae;
+    background-color:rgb(199, 221, 237);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@ body {
 
 .card {
     background-color: #e6f0fa;
-    border: 3px solid #2a07db;
+    border: 3px solid #1e0890;
     border-radius: 15px;
     width: 100%;
     max-width: 400px;
