@@ -1,0 +1,8 @@
+services:
+  new-year:
+    build: 
+      context: .
+    container_name: new-year
+    ports:
+      - "5050:80"
+
